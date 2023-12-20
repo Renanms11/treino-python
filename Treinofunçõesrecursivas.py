@@ -1,16 +1,13 @@
-def fibonacciAlgoritmo(x):
-    a = 0
-    b = 1
+def fatorialAlgoritmo(x):
+    fatorial = 1
     for i in range(x):
-        print(a , end = " ")
-        aux = b
-        b += a
-        a =aux
+        fatorial  *= i+1
+
+    return fatorial
+
+print(fatorialAlgoritmo(7))
 
 
 
-
-
-fibonacciAlgoritmo(10)
 
 
