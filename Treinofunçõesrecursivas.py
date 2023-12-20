@@ -1,13 +1,9 @@
-def fatorialAlgoritmo(x):
-    fatorial = 1
-    for i in range(x):
-        fatorial  *= i+1
-
-    return fatorial
-
-print(fatorialAlgoritmo(7))
 
 
+def fatoria(x):
+    if x == 1 or x == 0 :
+        return 1
 
+    return  x*fatoria(x-1)
 
-
+print(fatoria(5))
