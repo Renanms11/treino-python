@@ -1,9 +1,8 @@
 
 
-def fatoria(x):
-    if x == 1 or x == 0 :
-        return 1
+def fibonnaci(x, a= 0 , b = 1):
+  if x > 0 :
+      print(a, end=" ")
+      fibonnaci(x-1,b,a+b)
 
-    return  x*fatoria(x-1)
-
-print(fatoria(5))
+fibonnaci(10)
