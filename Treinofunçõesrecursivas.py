@@ -1,14 +1,8 @@
-# outra forma de importar conteudo
-#import tkinter
-#import tkinter as tk
-
-
 from tkinter import *
 
 janelaPrincipal = Tk()
-texto = Label(master = janelaPrincipal , text= 'minha janela')
-janelaPrincipal.title('Minha janela')
-texto.place(x = 300 , y = 450)
+texto = Label(master = janelaPrincipal, text= "essa é minha primeira janela Python !!!!! Hello world !")
 
+janelaPrincipal.geometry('500x500')
+texto.pack()
 janelaPrincipal.mainloop()
-
