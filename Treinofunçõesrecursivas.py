@@ -1,27 +1,14 @@
-def selectiveSort(lista):
-
-    posicao =0
-    for  i in range(len(lista )):
-        menor =i
-
-        for j in range(i+1, len(lista)):
-            if lista[j]< lista[menor]:
-                menor = j
-
-        # Se o elemento atual não é o menor, troca-os
-        if lista[i] != lista[menor]:
-            aux = lista[i]
-            lista[i] = lista[menor]
-            lista[menor] = aux
+# outra forma de importar conteudo
+#import tkinter
+#import tkinter as tk
 
 
+from tkinter import *
 
-lista = [10,5,9,1,3,4,6,2,7,5,8]
-selectiveSort(lista)
+janelaPrincipal = Tk()
+texto = Label(master = janelaPrincipal , text= 'minha janela')
+janelaPrincipal.title('Minha janela')
+texto.place(x = 300 , y = 450)
 
-for x in lista:
-    print(x , end = " ")
-
-
-
+janelaPrincipal.mainloop()
 
