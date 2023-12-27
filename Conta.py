@@ -53,4 +53,6 @@ class Conta:
 
         else:
             return 'saldo insuficiente !'
+    def _gerarSaldo(self):
+        print(f'numero:{ self.__numero} \n saldo:{ self.__saldo}')
 
