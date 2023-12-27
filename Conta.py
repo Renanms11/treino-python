@@ -1,6 +1,8 @@
+from Cliente import Cliente
+
 class Conta:
-    def __init__(self,numero, cpf, titular,saldo):
-        self.numero= numero
+    def __init__(self,clientes, cpf, titular,saldo):
+        self.clientes= clientes
         self.cpf=cpf
         self.titular= titular
         self.saldo =saldo
