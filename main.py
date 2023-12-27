@@ -1,16 +1,18 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from Conta import Conta
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+novaconta = Conta('1', '0138202074450','Renan miranda sena', 1000)
+
+novaconta.depositar(300)
+
+print(novaconta.saldo)
+
+novaconta.retirada(1000)
+print(novaconta.saldo)
+novaconta.retirada(200)
+print(novaconta.saldo)
+novaconta.retirada(100)
+print(novaconta.saldo)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
