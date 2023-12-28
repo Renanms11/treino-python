@@ -2,10 +2,14 @@ import math
 
 
 class ExcecaoCustomizada(Exception):
-    pass
- # exemplo pego um faunção escrita por min e boto aqui em baixo
-    def calcularSqrt(x):
-        if a < 0:
-            #aqui pode se impremir oque quiser
-            raise ExcecaoCustomizada("Ovalor fornecido e menor que zero")
-        return math.sqrt(x)
+    def __init__(self, texto ,valor ):
+        super().__init__(texto, valor)
+        self._valor = valor
+
+    @property
+    def valor(self):
+        return  self._valor
+
+
+    def __str__(self):
+        return f'{self.args[0]} -> {self._valor}'

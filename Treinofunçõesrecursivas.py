@@ -1,3 +1,5 @@
+import math
+from MinhaException import ExcecaoCustomizada
 import numpy as np
 from tkinter import *
 
@@ -26,6 +28,12 @@ matriz = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-
 for i in range(len(matriz)):
-    print(matriz[i][i] , end = ' ')
+        print(matriz[i][i] , end = ' ')
+
+#implementando minha exception Personalizada
+def calcularSqrt(x):
+    if x <0:
+        raise ExcecaoCustomizada("minha excepao personaliza",x)
+    else:
+        return math.sqrt(x)
