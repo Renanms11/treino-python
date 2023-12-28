@@ -2,8 +2,8 @@ from Conta import Conta
 class Agencia:
 
     _Banco = 'Banco novo'
-    def __init__(self,numero,gerente ,contas):
-        self.numero=numero
+    def __init__(self,numero,gerente, contas):
+        self.numero = numero
         self.gerente = gerente
         self.contas = contas
 
@@ -13,6 +13,20 @@ class Agencia:
     @classmethod
     def get_banco(cls):
         return cls._Banco
+
+    @staticmethod
+    def informacaoEmprestimo(valor,numeroParcelas):
+        juros = valor * 0.20
+        pagamentoParcelaunica = (valor+juros) -((valor+juros)*0.05)
+        parcelas = (valor+juros)/numeroParcelas
+
+        if numeroParcelas > 1:
+            print(f'Emprestimo de {valor} será pago em {numeroParcelas}\n valor por parcela { parcelas} no valor total de'
+                  f' R$ {parcelas*numeroParcelas}')
+        else:
+            print(f'Emprestimo de {valor} será pago em valor unico \n  valor R$ { pagamentoParcelaunica}')
+
+
 
 
     def OrdenarContas(self):

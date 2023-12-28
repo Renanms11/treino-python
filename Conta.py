@@ -4,7 +4,7 @@ from Cliente import Cliente
 from Extrato import  Extrato
 
 class Conta:
-    def __init__(self,clientes, cpf, numero,saldo):
+    def __init__(self,clientes, numero,saldo):
         self.__clientes= clientes
         self.__cpf=cpf
         self.__numero= numero
